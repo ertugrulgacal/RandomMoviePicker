@@ -14,7 +14,7 @@ final class MRandomViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Random"
         navigationItem.largeTitleDisplayMode = .automatic
-        
-        
+        let request = MRequest(endpoint: .movie, pathComponents: ["top_rated"], queryParameters: [URLQueryItem(name: "api_key", value: "00000000000000000")])
+        print(request.url)
     }
 }

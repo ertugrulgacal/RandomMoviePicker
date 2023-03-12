@@ -15,6 +15,16 @@
 		EA63E28129BE649B00389912 /* MWatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28029BE649B00389912 /* MWatchlistViewController.swift */; };
 		EA63E28329BE652A00389912 /* MRandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28229BE652A00389912 /* MRandomViewController.swift */; };
 		EA63E28529BE653E00389912 /* MSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28429BE653E00389912 /* MSettingsViewController.swift */; };
+		EA63E28729BE759500389912 /* MService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28629BE759500389912 /* MService.swift */; };
+		EA63E28929BE75A000389912 /* MRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28829BE75A000389912 /* MRequest.swift */; };
+		EA63E28B29BE75A900389912 /* MEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28A29BE75A900389912 /* MEndpoint.swift */; };
+		EA63E28D29BE7EBD00389912 /* MMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28C29BE7EBD00389912 /* MMovie.swift */; };
+		EA63E28F29BE7ECE00389912 /* MTopRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E28E29BE7ECE00389912 /* MTopRated.swift */; };
+		EA63E29129BE7F0B00389912 /* MWatchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E29029BE7F0B00389912 /* MWatchlist.swift */; };
+		EA63E29329BE81AA00389912 /* MGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E29229BE81AA00389912 /* MGenres.swift */; };
+		EA63E29529BE81FB00389912 /* MLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E29429BE81FB00389912 /* MLanguages.swift */; };
+		EA63E29729BE853C00389912 /* MGetWatchlistResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E29629BE853C00389912 /* MGetWatchlistResults.swift */; };
+		EA63E29929BE859500389912 /* MGetTopRatedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63E29829BE859500389912 /* MGetTopRatedResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +38,16 @@
 		EA63E28029BE649B00389912 /* MWatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWatchlistViewController.swift; sourceTree = "<group>"; };
 		EA63E28229BE652A00389912 /* MRandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRandomViewController.swift; sourceTree = "<group>"; };
 		EA63E28429BE653E00389912 /* MSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSettingsViewController.swift; sourceTree = "<group>"; };
+		EA63E28629BE759500389912 /* MService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MService.swift; sourceTree = "<group>"; };
+		EA63E28829BE75A000389912 /* MRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRequest.swift; sourceTree = "<group>"; };
+		EA63E28A29BE75A900389912 /* MEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MEndpoint.swift; sourceTree = "<group>"; };
+		EA63E28C29BE7EBD00389912 /* MMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMovie.swift; sourceTree = "<group>"; };
+		EA63E28E29BE7ECE00389912 /* MTopRated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTopRated.swift; sourceTree = "<group>"; };
+		EA63E29029BE7F0B00389912 /* MWatchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWatchlist.swift; sourceTree = "<group>"; };
+		EA63E29229BE81AA00389912 /* MGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGenres.swift; sourceTree = "<group>"; };
+		EA63E29429BE81FB00389912 /* MLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLanguages.swift; sourceTree = "<group>"; };
+		EA63E29629BE853C00389912 /* MGetWatchlistResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGetWatchlistResults.swift; sourceTree = "<group>"; };
+		EA63E29829BE859500389912 /* MGetTopRatedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGetTopRatedResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +103,13 @@
 		EA63E27929BE608600389912 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA63E28C29BE7EBD00389912 /* MMovie.swift */,
+				EA63E28E29BE7ECE00389912 /* MTopRated.swift */,
+				EA63E29029BE7F0B00389912 /* MWatchlist.swift */,
+				EA63E29229BE81AA00389912 /* MGenres.swift */,
+				EA63E29429BE81FB00389912 /* MLanguages.swift */,
+				EA63E29629BE853C00389912 /* MGetWatchlistResults.swift */,
+				EA63E29829BE859500389912 /* MGetTopRatedResults.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -104,6 +131,9 @@
 		EA63E27C29BE60A700389912 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				EA63E28629BE759500389912 /* MService.swift */,
+				EA63E28829BE75A000389912 /* MRequest.swift */,
+				EA63E28A29BE75A900389912 /* MEndpoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -207,12 +237,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA63E28D29BE7EBD00389912 /* MMovie.swift in Sources */,
+				EA63E28B29BE75A900389912 /* MEndpoint.swift in Sources */,
+				EA63E28F29BE7ECE00389912 /* MTopRated.swift in Sources */,
+				EA63E28729BE759500389912 /* MService.swift in Sources */,
 				EA63E28329BE652A00389912 /* MRandomViewController.swift in Sources */,
 				EA63E28129BE649B00389912 /* MWatchlistViewController.swift in Sources */,
+				EA63E29929BE859500389912 /* MGetTopRatedResults.swift in Sources */,
 				EA63E26929BE5D3700389912 /* MTabBarController.swift in Sources */,
+				EA63E29129BE7F0B00389912 /* MWatchlist.swift in Sources */,
 				EA63E28529BE653E00389912 /* MSettingsViewController.swift in Sources */,
+				EA63E29529BE81FB00389912 /* MLanguages.swift in Sources */,
+				EA63E29729BE853C00389912 /* MGetWatchlistResults.swift in Sources */,
 				EA63E26529BE5D3700389912 /* AppDelegate.swift in Sources */,
 				EA63E26729BE5D3700389912 /* SceneDelegate.swift in Sources */,
+				EA63E28929BE75A000389912 /* MRequest.swift in Sources */,
+				EA63E29329BE81AA00389912 /* MGenres.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
