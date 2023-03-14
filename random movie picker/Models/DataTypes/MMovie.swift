@@ -12,7 +12,7 @@ struct MMovie: Codable {
     let backdrop_path: String
     // let belongs_to_collection: NSNull
     let budget: Int
-    let genres: MGenres
+    let genres: [MGenres]
     let homepage: String
     let id: Int
     let imdb_id: String
@@ -26,7 +26,7 @@ struct MMovie: Codable {
     let release_date: String
     let revenue: Int
     let runtime: Int
-    let spoken_languages: MLanguages
+    let spoken_languages: [MLanguages]
     let status: String
     let tagline: String
     let title: String

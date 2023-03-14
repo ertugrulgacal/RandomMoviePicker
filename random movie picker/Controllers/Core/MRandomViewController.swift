@@ -14,7 +14,16 @@ final class MRandomViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Random"
         navigationItem.largeTitleDisplayMode = .automatic
-        let request = MRequest(endpoint: .movie, pathComponents: ["top_rated"], queryParameters: [URLQueryItem(name: "api_key", value: "00000000000000000")])
-        print(request.url)
+        
+        // print(MRequest.listTopRatedRequest.url)
+        
+        MService.shared.execute(.listTopRatedRequest, expecting: MTopRated.self) { result in
+            switch result {
+            case .success(let model):
+                print(String(describing: model))
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
     }
 }

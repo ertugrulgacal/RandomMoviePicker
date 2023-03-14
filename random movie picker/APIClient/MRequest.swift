@@ -14,7 +14,7 @@ final class MRequest {
     }
     // URL Components
     private let endpoint: MEndpoint
-    private let pathComponents: Set<String>
+    private let pathComponents: [String]
     private let queryParameters: [URLQueryItem]
     
     private var urlString: String {
@@ -49,10 +49,16 @@ final class MRequest {
     public let httpMethod = "GET"
     
     // Construct request
-    public init(endpoint: MEndpoint, pathComponents: Set<String> = [], queryParameters: [URLQueryItem] = []) {
+    public init(endpoint: MEndpoint, pathComponents: [String] = [], queryParameters: [URLQueryItem] = []) {
         self.endpoint = endpoint
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
     
+}
+
+let api_key = ReadJson().api_key
+
+extension MRequest {
+    static let listTopRatedRequest = MRequest(endpoint: .movie, pathComponents: ["top_rated"], queryParameters: [URLQueryItem(name: "api_key", value: api_key)])
 }
