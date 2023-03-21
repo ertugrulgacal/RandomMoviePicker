@@ -15,6 +15,17 @@ final class MWatchlistViewController: UIViewController {
         title = "Watchlist"
         navigationItem.largeTitleDisplayMode = .automatic
         
+        MService.shared.execute(.listTopRatedRequest, expecting: MTopRated.self) { result in
+            switch result {
+            case .success(let model):
+                // print(String(describing: model))
+                print(String(model.results[0].original_title + "\n" + model.results[0].poster_path))
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
         
     }
+    
+    
 }
