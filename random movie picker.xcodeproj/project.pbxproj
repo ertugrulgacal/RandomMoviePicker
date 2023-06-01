@@ -133,8 +133,8 @@
 		EA63E27C29BE60A700389912 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
-				EA63E28629BE759500389912 /* MService.swift */,
 				EA63E28829BE75A000389912 /* MRequest.swift */,
+				EA63E28629BE759500389912 /* MService.swift */,
 				EA63E28A29BE75A900389912 /* MEndpoint.swift */,
 			);
 			path = APIClient;

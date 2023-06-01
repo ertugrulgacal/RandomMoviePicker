@@ -19,7 +19,7 @@ final class MWatchlistViewController: UIViewController {
             switch result {
             case .success(let model):
                 // print(String(describing: model))
-                print(String(model.results[0].original_title + "\n" + model.results[0].poster_path))
+                print(model.results.count)
             case .failure(let error):
                 print(String(describing: error))
             }

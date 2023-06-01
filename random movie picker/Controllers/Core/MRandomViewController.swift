@@ -37,7 +37,7 @@ final class MRandomViewController: UIViewController {
         view.addSubview(button)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
-        getRandomMovie()
+        getRandomMovie(rand: 1)
         
     }
     
@@ -48,18 +48,22 @@ final class MRandomViewController: UIViewController {
     }
     
     @objc func didTapButton() {
-        
+        let randomInt = Int.random(in: 0..<100)
+        getRandomMovie(rand: randomInt)
     }
     
-    func getRandomMovie() {
+    func getRandomMovie(rand: Int) {
+        let page = rand / 20 + 1
+        let rand = rand % 20
         MService.shared.execute(.listTopRatedRequest, expecting: MTopRated.self) { result in
             switch result {
             case .success(let model):
-                let posterURL = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2" + model.results[0].poster_path
+                let posterURL = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2" + model.results[rand].poster_path
                 let url = URL(string: posterURL)!
                 guard let data = try? Data(contentsOf: url) else { return }
                 DispatchQueue.main.sync {
                     self.imageView.image = UIImage(data: data)
+                    self.button.setTitle(model.results[rand].title, for: .normal)
                 }
                 
             case .failure(let error):
